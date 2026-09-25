@@ -1,0 +1,94 @@
+#dynamic-image {width: 600px; height: 1000px;
+object-fit: cover;
+transition: opacity 0.5s ease-in-out;
+opacity: 1;}
+.fade-out {opacity: 0 !important;}
+#Titulo{
+    font-size: 80px;
+    font-family: "imperial Script", cursive;
+    text-align: center;
+}
+#Padrinos{
+    font-size: 30px;
+    color: black;
+    text-decoration: 2px underline black;
+}
+#Hermanos{
+    font-size: 30px;
+    color: black;
+text-decoration: 2px underline black;}
+#Iglesia{
+    font-size: 40px;
+    color: black;
+text-decoration: 2px underline black;}
+#Parroquia{
+    font-size: 40px;
+    color: black;
+text-decoration: 2px underline black;}
+#Salón{
+    font-size: 40px;
+    color: black;
+text-decoration: 2px underline black;}
+#SalonL{
+    font-size: 40px;
+    text-decoration: 2px underline black;
+    color: black;
+text-decoration: 2px underline black;}
+#Fotosau{
+    font-size: 40px;
+    color: black;
+text-decoration: 2px underline black;}
+#Regalos{
+    font-size: 40px;
+    color: black;
+    font-weight: 700;
+text-decoration: 2px underline black;}
+#Papás{
+    font-size: 30px;
+    color: black;
+    text-decoration: 2px underline black;
+}
+#Chalán{ font-size: 30px;
+color: black;
+text-decoration: 2px black underline;}
+.Texto{font-size: 35px;
+    text-align:center;
+   font-family: "Imperial Script",cursive;
+   font-weight: 700;
+   
+    color: rgb(221, 162, 0);}
+    .Boton{
+        font-size: 25px;
+  
+        /* color: #fff; */}
+        a:link{color: white;}
+        a:visited{color: rgb(30, 0, 58);}
+        a:hover{color: fuchsia;}
+        a:active{color: black;}
+        body{background-color: rgb(211, 10, 10);
+            background-image: url(marcotopl.png), url(marcotopd.png),url(marcobl.png), url(marcobd.png), url(centl.png), url(centd.png);
+            background-repeat: no-repeat;
+            
+            background-position: top left, top right, bottom left, bottom right, center left, center right;
+            background-size: 340px 270px, 286px 270px,340px 270px , 286px 270px, 270px  800px, 270px 800px;}
+       /*  #fond{background-image: none;
+        background-size: cover;} */
+
+#futer{text-align: right;  font-family: arial, "Times New Roman";
+color: black;}
+/* .inline{display: inline;} */
+#posicion{
+    position:static;
+}
+#Quin{color: black;
+text-decoration: 2px black underline;}
+#ImagenG{position: relative;
+left: 450px;}
+#Fecha{text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 25px;
+text-decoration: 2px black underline;}
+/* #posicion2{
+    position: relative;
+    left: 50px; */
+/* } */

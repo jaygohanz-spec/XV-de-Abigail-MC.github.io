@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Digital</title>
+    <link rel="stylesheet" href="Styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--Inicio de codigo-->
+<!-- <img id="fond" src="marco.png"/> -->
+    
+    <h3 id="Titulo">XV Abigail Martinez Centeno</h3> <h4 id="Fecha">17 de Octubre del 2026</h4>
+    <img id="ImagenG" src="image1.jpeg" /><br>
+    <article class="Texto"><p>Has cerrado la puerta de la niñez, para abrir la puerta de la adultez, éste quinceavo año es el comienzo de una etapa llena de propósitos<br>
+        y sueños por cumplir. Es momento de disfrutar los momentos porque el tiempo vuela, pero los recuerdos de ese día permanecerán en el corazón.  <br>
+      
+    </p>
+    
+</article>
+
+<!--Nombres de personas-->
+
+  <article class="Texto"> 
+
+    <h4 id="Papás">Mis Papás</h4>
+    <p>Erika Yadira Centeno <br>
+        Rolando Martínez
+    </p> 
+    <h4 id="Padrinos">Mis Padrinos</h4>
+    <p>Ninfa Centeno <br> Iván Ávila</p>
+    <h4 id="Hermanos">Mis Hermanos</h4> 
+    <p>Erick Martínez Centeno <br> 
+    Johan Martínez Centeno</p>
+    <h4 id="Chalán">Mi Chalán </h4>
+    <p>Iker Rentería</p> <br></article>
+
+     <!--Lugares y ubicaciones-->
+
+    <article class="Texto">
+        
+      <!--  <span class="inline"> -->
+        <div id="posicion">
+        <h3 id="Iglesia">Iglesia</h3>
+        <img src="Iglesia.jpg" width="300" height="400" /><br>
+        <h4 id="Parroquia">Parroquia María Madre de Dios</h4> 
+     <p>Fecha y hora: 17/Octubre/2026 07:00pm <br> Dirección: Monte Celeste #11306, Área de reserva, <br> Quintas Carolinas, 31146 Chihuahua, Chih.</p>
+     <a class="Boton" target="_blank" href="https://maps.app.goo.gl/SuvXYSmxCu7K8vTB9">Ver Mapa</a><br><!-- </span> -->
+    </div>
+     <div id="posicion2">
+     <h3 id="Salón">Salón</h3>
+    <img src="Caporales.webp" width="500" height="300"/><br>
+    <h4 id="SalonL">Salón Los Caporales</h4>
+    <p>Fecha y hora: 17/Octubre/2026 09:00pm <br> Dirección: Vialidad Los Nogales #2509, <br> Rodolfo Fierro, 31137 Chihuahua, Chih.</p>
+    
+      <a class="Boton" target="_blank" href="https://maps.app.goo.gl/tiDp2exopYVDyBTC7">Ver Mapa</a> <br>
+    <!-- </span> --></div>
+  </article>
+
+  <!--Fotos Automaticas-->
+    
+  <article class="Texto">
+    
+   
+
+    <h3 id="Fotosau">Mis Fotos</h3>
+  
+   <img id="dynamic-image" src="image1.jpeg" >
+   <script>
+   const images = ["image1.jpeg","image2.jpeg","image3.jpeg","image4.jpeg","image5.jpeg","image6.jpeg","image7.jpeg","image8.jpeg","image9.jpeg"];
+   let currentIndex = 0;
+   const imageElement = document.getElementById("dynamic-image");
+   function ChangeImage(){
+    imageElement.classList.add("fade-out");
+    setTimeout(()=>{
+    currentIndex = (currentIndex + 1) % images.length;
+    imageElement.src = images[currentIndex];
+    imageElement.classList.remove("fade-out")},500);}
+    setInterval(ChangeImage, 5000);</script> <br> <p>Abigail Martínez Centeno te invita a que participes en esta una importante fecha,<br> la celebración de sus XV años </p> 
+   <a class="Boton" target="_blank"href="https://w.app/boopxu">Confirmar Asistencia</a> <br>
+</article>
+
+<!--Regalos-->
+
+<article class="Texto"> 
+   
+
+   <h2 id="Regalos">Regalos</h2>
+   <p>Tu presencia es un honor, recibiré agradecida <br> cualuqier detalle que tengas conmigo.</p>
+   <h2 id ="Quin">Color reservado para la quinceañera</h2>
+   <p>El color rojo estará reservado exclusivamente <br> para Abigail Martínez Centeno. </p>
+    </article> 
+
+<!--Pie de Pagina-->
+
+<footer id="futer">
+<a class="Boton" href="#Titulo">Volver arriba</a>
+    </footer>
+</body>
+</html>
