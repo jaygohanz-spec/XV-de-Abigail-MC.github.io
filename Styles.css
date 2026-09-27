@@ -66,11 +66,12 @@ text-decoration: 2px black underline;}
         a:hover{color: fuchsia;}
         a:active{color: black;}
         body{background-color: rgb(211, 10, 10);
-            background-image: url(marcotopl.png), url(marcotopd.png),url(marcobl.png), url(marcobd.png), url(centl.png), url(centd.png);
+            /* background-image: url(marcotopl.png), url(marcotopd.png),url(marcobl.png), url(marcobd.png), url(centl.png), url(centd.png);
             background-repeat: no-repeat;
             
             background-position: top left, top right, bottom left, bottom right, center left, center right;
-            background-size: 340px 270px, 286px 270px,340px 270px , 286px 270px, 270px  800px, 270px 800px;}
+            background-size: 340px 270px, 286px 270px,340px 270px , 286px 270px, 270px  800px, 270px 800px;
+        width: 100%;min-height: 400px; */}
        /*  #fond{background-image: none;
         background-size: cover;} */
 
@@ -78,16 +79,35 @@ text-decoration: 2px black underline;}
 color: black;}
 /* .inline{display: inline;} */
 #posicion{
-    position:static;
-}
+    position:center;
+} 
 #Quin{color: black;
 text-decoration: 2px black underline;}
-#ImagenG{position: relative;
-left: 450px;}
+#ImagenG{position: center;
+/* left: 450px; */}
 #Fecha{text-align: center;
 font-family: Arial, Helvetica, sans-serif;
 font-size: 25px;
 text-decoration: 2px black underline;}
+.Marco-imagen{position:fixed;
+background-size: contain;
+background-repeat: no-repeat;
+width: 150px;
+height: 150px;
+z-index: 10;
+pointer-events: none;}
+.tpl{top: 0; left: 0; background-image: url("marcotopl.png")}
+.tpd{top: 0;right: 0; background-image: url("marcotopd.png");}
+.cnl{top: 50%; left: 0; transform: translateY(-50%); background-image: url("centl.png");}
+.cnd{top: 50%; right: 0;transform: translateY(-50%); background-image: url("centd.png");}
+.bol{bottom: 0; left: 0;background-image: url("marcobl.png");}
+.bod{bottom: 0; right: 0; background-image: url("marcobd.png");}
+@media(max-width:768px) {#ImagenG{flex-direction: column ; width: 100%;} 
+h1, #Titulo{font-size: 28px; text-align: center; padding: 0 15px;}
+img{max-width: 100%; height: auto;display: block;} 
+.Marco-imagen{width: 60px; height: 60px;
+opacity: 0.7;
+z-index: -1;}}
 /* #posicion2{
     position: relative;
     left: 50px; */
